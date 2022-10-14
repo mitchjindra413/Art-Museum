@@ -6,12 +6,12 @@ import { Route, Switch, Redirect } from "react-router-dom";
 
 function App() {
   return (
-    <>
+    <div className="page-wrapper">
       <GalleryNavigation galleries={harvardArt.records}/>
       <Switch>
-        <Route path="/galleries/galleryId" component={GalleryView}/>
+        <Route path="/galleries/:galleryId" component={GalleryView(harvardArt.records)}/>
       </Switch>
-    </> 
+    </div> 
   );
 }
 

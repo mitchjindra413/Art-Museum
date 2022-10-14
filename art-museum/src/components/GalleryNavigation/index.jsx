@@ -1,7 +1,6 @@
 import { NavLink } from "react-router-dom";
 
 export const GalleryNavigation = ({galleries}) => {
-
     return (
         <nav>
             <h1>Galleries</h1>
